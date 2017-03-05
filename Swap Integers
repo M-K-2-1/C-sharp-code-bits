@@ -1,0 +1,15 @@
+public class Program
+{
+  public static void main (String args[])
+  {
+    int a=400;
+    int b=700;
+    //Swap the two variables without using a third variable
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    Consle.WriteLine("The two swapped integers are:");
+    Consle.WriteLine(a);
+    Consle.WriteLine(b);
+  }
+}
