@@ -1,0 +1,22 @@
+public class Program
+{
+  public static void main (String args[])
+  {
+    string word=RemoveDuplicate("Google");
+    Console.WriteLine(word);
+  }
+  public static string RemoveDuplicate(string word)
+  {
+    string table="";
+    string newword="";
+    foreach(char value in word)
+    {
+      if(table.IndexOf(value)==-1)
+      {
+        table+=value;
+        newword+=value;
+      }
+    }
+    return newword;
+  }
+}
